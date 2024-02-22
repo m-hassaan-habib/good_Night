@@ -8,4 +8,6 @@ Rails.application.routes.draw do
       end
     end
   end
+  
+  post '/', to: 'api/v1/users#create'
 end

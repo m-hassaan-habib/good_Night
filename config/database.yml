@@ -82,5 +82,4 @@ test:
 production:
   <<: *default
   database: good_night_production
-  username: good_night
-  password: <%= ENV["GOOD_NIGHT_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
